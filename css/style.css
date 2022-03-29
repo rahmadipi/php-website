@@ -1,0 +1,252 @@
+body{
+	font-family:tekton pro;
+	margin:0px;
+	font-size:17px;
+}
+a{
+	text-decoration:none;
+}
+p{
+	text-indent:30px;
+	text-align:justify;
+}
+textarea{
+	resize:none;
+}
+/**********************
+****** index.php ******
+**********************/
+.all{
+	width:100%;
+	min-width:500px;
+	min-height:100%;
+	background-color:black;
+	color:white;
+}
+.menu{
+	text-align:center;
+	width:100%;
+	height:30px;
+}
+.logo{
+	margin:auto;
+	width:300px;height:300px;
+}
+.logo:hover div{
+	background:url(../gambar/logo/rph.png);
+	animation:logo 1s;
+	-webkit-animation:logo 1s;
+}
+.logo div{
+	width:300px;height:300px;
+	background:url(../gambar/logo/rp.png);
+}
+@keyframes logo{
+	0%{transform:rotate(0deg)}
+	25%{transform:rotate(25deg)}
+	75%{transform:rotate(-15deg)}
+	100%{transform:rotate(0deg)}
+}
+@-webkit-keyframes logo{
+	0%{-webkit-transform:rotate(0deg)}
+	25%{-webkit-transform:rotate(25deg)}
+	75%{-webkit-transform:rotate(-15deg)}
+	100%{-webkit-transform:rotate(0deg)}
+}
+.ani{
+	animation:ani 5s infinite;
+	-webkit-animation:ani 5s infinite;
+	box-shadow:0px 0px 5px white;
+}
+@keyframes ani{
+	0%{background:rgb(0,0,0);color:white;}
+	25%{background:rgb(255,255,255);color:black;}
+	50%{background:rgb(255,0,0);color:white;}
+	75%{background:rgb(255,255,255);color:black;}
+	100%{background:rgb(0,0,0);color:white;}
+}
+@-webkit-keyframes ani{
+	0%{background:rgb(0,0,0);color:white;}
+	25%{background:rgb(255,255,255);color:black;}
+	50%{background:rgb(255,0,0);color:white;}
+	75%{background:rgb(255,255,255);color:black;}
+	100%{background:rgb(0,0,0);color:white;}
+}
+/**********************
+******* rp.php ********
+**********************/
+/*class ani dan logo dari index*/
+.all2{
+	width:100%;
+	min-width:940px;
+	min-height:100%;
+	background:url(../gambar/bg/black-white.png);
+	color:black;
+	background-attachment:fixed;
+}
+.menubar a{
+	color:inherit;
+}
+#menubar-clone{
+	width:100%;height:30px;
+	background:rgba(0,0,0,1);
+	box-shadow:0px 5px 5px 1px black;
+}
+.menubar{
+	width:100%;height:30px;
+	background:rgba(0,0,0,1);
+	box-shadow:0px 5px 5px 1px black;
+	color:white;
+	font-size:19px;
+	z-index:100;
+}
+.konten{
+	margin:10px auto;
+	border-radius:20px;
+	width:900px;height:*;
+	background:black;
+	padding:10px;
+	box-shadow:0px 5px 5px 2px black;
+	border:white solid;
+}
+.konten .atas{
+	color:white;
+	margin-bottom:10px;
+	width:900px;height:*;
+	box-shadow:0px 0px 5px black inset;
+	/* background:rgba(255,255,255,0.8); */
+	background:url(../gambar/bg/gargana.png);
+	border-radius: 20px 20px 0px 0px;
+}
+.konten .sambut{
+	margin:auto;
+	width:400px;
+}
+.konten .kanan{
+	width:240px;height:*;
+	float:right;
+	padding-left:10px;
+}
+.konten .kanan .judul{
+	text-align:center;
+	background:white;
+}
+.konten .kanan .isi{
+	margin-bottom:10px;
+	text-align:center;
+	padding:5px;
+	background:rgba(255,255,255,0.8);
+	box-shadow:0px 0px 5px black inset;
+}
+.konten .kiri{
+	width:650px;height:*;
+	float:left;
+	box-shadow:0px 0px 5px black inset;
+	background:rgba(255,255,255,0.8);
+	margin-bottom:10px;
+}
+.konten .kiri .judul{
+	margin:10px;
+	width:630px;
+	text-align:center;
+	background:white;
+}
+.konten .kiri .isi{
+	margin:0px 10px 10px 10px;
+	background:rgba(255,255,255,0.3);
+	width:630px;height:100px;
+}
+.konten .kiri .gambar{
+	margin:10px;
+	height:80px;
+	box-shadow:0px 0px 5px;
+	border-radius:10px;
+	opacity:0.8;
+}
+.konten .kiri .gambar:hover{
+	margin:5px;
+	height:90px;
+	opacity:1;
+}
+.konten .kiri .teks{
+	float:right;
+	width:290px;height:80px;
+	padding:10px 10px;
+	margin-right:10px;
+}
+.konten .kiri .kategori{
+	float:right;
+	width:130px;height:60px;
+	-webkit-transform:rotate(0deg);
+	transform:rotate(0deg);
+	padding:20px;
+	transition:all 0.5s;
+}
+.konten .kiri .kategori:hover{
+	-webkit-transform:rotate(15deg);
+	transform:rotate(15deg);
+}
+.konten .kiri .tambahan{
+	text-align:center;
+	margin:0px 10px 10px 10px;
+	background:rgba(255,255,255,0.3);
+	width:630px;
+}
+.menubar ul{
+	padding:0px;
+	list-style:none;
+	display:inline;
+}
+.menubar ul li{
+	position:relative;
+	display:inline;
+	padding:0px 20px;
+}
+.menubar ul li:hover{
+	color:red;
+	text-shadow:0px 0px 1px white;
+} 
+.menubar ul li:hover ul{
+	visibility:visible;
+}
+.menubar ul ul{
+	display:block;
+	position:absolute;
+	text-align:left;
+	width:200px;
+	visibility:hidden;
+}
+.menubar ul ul li{
+	background:black;
+	display:block;
+	box-shadow:0px 0px 5px white inset;
+	border-radius:5px;
+}
+.menubar ul ul li:hover{
+	color:white;
+}
+.clear{
+	clear:both;
+}
+/*********** komentar.php *****/
+.konten .kiri .komentar{
+	margin:0px 10px 10px 10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	background:rgba(255,255,255,0.3);
+	width:630px;
+}
+.konten .kiri .komentar div{
+	margin:0px 10px;
+	background:rgba(255,255,255,0.3);
+}
+.konten .kanan .komentar{
+	margin:0px 10px 10px 10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	background:rgba(255,255,255,0.3);
+}
+.konten .kanan .komentar div{
+	margin:0px 10px;
+	background:rgba(255,255,255,0.3);
+}
